@@ -10,7 +10,7 @@ Answers are given for a CPU of 1 GHz (10^9).
 |  √n    |          |          |        |       |         |        |           |
 |   n    |          |          |        |       |         |        |           |
 | n lg n |          |          |        |       |         |        |           |
-|  ![equation](http://www.sciweavers.org/tex2img.php?eq=n%5E2&fc=Black&im=jpg&fs=12&ff=arev&edit=)   |          |          |        |       |         |        |           |
+|  n^2   |          |          |        |       |         |        |           |
 |  n^3   |          |          |        |       |         |        |           |
 |  2^n   |          |          |        |       |         |        |           |
 |  n!    |          |          |        |       |         |        |           |
