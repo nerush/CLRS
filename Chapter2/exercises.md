@@ -15,7 +15,13 @@ Using Figure 2.2 as a model, illustrate the operation of INSERTION-SORT on the a
 Rewrite the INSERTION-SORT procedure to sort into non-increasing instead of non-decreasing order.
 
 ```scala
-val code = ???
+for j = 2 to A.length
+  key = A[j]
+  i = j - 1
+  while i > 0 and A[i] < key
+    A[i + 1] = A[i]
+    i = i - 1
+  A[i + 1] = key
 ```
 
 #### 2.1-3
