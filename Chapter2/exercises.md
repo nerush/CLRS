@@ -12,9 +12,11 @@ Using Figure 2.2 as a model, illustrate the operation of INSERTION-SORT on the a
 
 
 #### 2.1-2
-Rewrite the INSERTION-SORT procedure to sort into nonincreasing instead of non- decreasing order.
+Rewrite the INSERTION-SORT procedure to sort into non-increasing instead of non-decreasing order.
 
-TODO
+```scala
+val code = ???
+```
 
 #### 2.1-3
 Consider the searching problem:
