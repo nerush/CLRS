@@ -1,7 +1,15 @@
 #### 2.1-1
 Using Figure 2.2 as a model, illustrate the operation of INSERTION-SORT on the array `[31, 41, 59, 26, 41, 58]`.
 
-TODO
+|    step    | state |
+|--------|-----------|
+| 1 | [**31**, 41 , 59, 26, 41, 58] |
+| 2 | [**31**, **41**, 59, 26, 41, 58] |
+| 3 | [**31**, **41**, **59**, 26, 41, 58] |
+| 4 | [**26**, **31**, **41**, **59**, 41, 58] |
+| 5 | [**26**, **31**, **41**, **41**, **59**, 58] |
+| 6 | [**26**, **31**, **41**, **41**, **58**, **59**] |
+
 
 #### 2.1-2
 Rewrite the INSERTION-SORT procedure to sort into nonincreasing instead of non- decreasing order.
