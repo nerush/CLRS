@@ -27,12 +27,14 @@ for j = 2 to A.length
 #### 2.1-3
 Consider the searching problem:
 Input: A sequence of `n` numbers `A = [a1, a2, ..., an]` and a value `v`.
+
 Output: An index i such that `v = A[i]` or the special value `NIL` if `v` does not appear in `A`.
 
 Write pseudocode for _**linear search**_, which scans through the sequence, looking for `v`. 
 Using a loop invariant, prove that your algorithm is correct. Make sure that your loop invariant fulfills the three necessary properties.
 
-TODO
+![alt text](./2.1-3.png "Pseudocode")
+
 
 #### 2.1-4
 Consider the problem of adding two _n_-bit binary integers, stored in two _n_-element arrays `A` and `B`. 
