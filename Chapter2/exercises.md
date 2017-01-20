@@ -71,8 +71,8 @@ function add(A, B)
   C = [A.length+1]
   carry = 0
   for i = A.length to 1 by -1
-    C[i] = (A[i] XOR B[i]) XOR carry
+    C[i]  = (A[i] XOR B[i]) XOR carry
     carry = ((A[i] XOR B[i]) AND carry) OR (A[i] AND B[i])
-  C[1] = carry
+  C[1]  = carry
   return C
 ```
