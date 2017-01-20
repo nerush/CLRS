@@ -63,8 +63,8 @@ State the problem formally and write pseudocode for adding the two integers.
 
 Given below pseudocode for binary addition called **ADD**, which is responsible for adding two binary digits represented in
  array data structure. The algorithm creates new array C of n+1 size for holding the result of addition, iterates through A and B from 
- least significant bit to the most significant one, adds bits using XOR binary operator and keeps the carry for the next iteration using 
- AND binary operator. After adding A and B, the resulting carry bit is stored at C[1].
+ least significant bit to the most significant one, adds bits and keeps the carry for the next iteration. 
+ After adding A and B, the resulting carry bit is stored at C[1].
 
 ```scala
 function add(A, B)
