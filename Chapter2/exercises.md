@@ -58,9 +58,21 @@ The sum of the two integers should be stored in binary form in an _`(n+1)-elemen
 State the problem formally and write pseudocode for adding the two integers.
 
 **Input**: Two _n_-bit binary integers, stored in two _n_-element arrays `A` and `B`
+
 **Output**: The sum of the two integers stored in binary form in an _`(n+1)-element`_ array `C`
 
 Given below pseudocode for binary addition called **ADDER**, which is responsible for adding two binary digits represented in
  array data structure. The algorithm creates new array C of n+1 size for holding the result of addition, iterates through A and B from 
  least significant bit to the most significant one, adds bits using XOR binary operator and keeps the carry for the next iteration using 
  AND binary operator. After adding A and B, the resulting carry bit is stored at C[1].
+
+```scala
+function add(A, B)
+  C = [A.length+1]
+  carry = 0
+  for i = A.length to 1 by -1
+    C[i] = (A[i] XOR B[i]) XOR carry
+    carry = ((A[i] XOR B[i]) AND carry) OR (A[i] AND B[i])
+  C[1] = carry
+  return C
+```
