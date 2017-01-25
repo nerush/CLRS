@@ -76,3 +76,9 @@ function add(A, B)
   C[1]  = carry
   return C
 ```
+
+#### 2.2-1
+Express the function `n^3/1000 - 100*(n^2) - 100n + 3` in terms of O-notation.
+
+`O(n^3)`
+
