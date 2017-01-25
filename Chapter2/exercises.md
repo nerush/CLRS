@@ -82,3 +82,42 @@ Express the function `n^3/1000 - 100*(n^2) - 100n + 3` in terms of O-notation.
 
 `O(n^3)`
 
+#### 2.2-2
+Consider sorting n numbers stored in array A by first finding the smallest element of A and exchanging it with the element in A[1]. Then 
+find the second smallest element of A, and exchange it with A[2]. Continue in this manner for the first n - 1 elements of A. 
+Write pseudocode for this algorithm, which is known as selection sort.
+
+TODO
+
+What loop invariant does this algorithm maintain?
+
+TODO
+
+Why does it need to run for only the first n - 1 elements, rather than for all n elements?
+
+TODO
+
+Give the best-case and worst-case running times of selection sort in O-notation.
+
+TODO
+
+
+#### 2.2-3
+Consider linear search again (see Exercise 2.1-3) and justify your answers.
+How many elements of the in- put sequence need to be checked on the average, assuming that the element being searched for is equally likely 
+to be any element in the array?
+
+TODO
+
+How about in the worst case?
+
+TODO
+
+What are the average-case and worst-case running times of linear search in O-notation?
+
+TODO
+
+#### 2.2-4
+How can we modify almost any algorithm to have a good best-case running time?
+
+TODO
