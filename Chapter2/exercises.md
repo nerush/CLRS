@@ -87,7 +87,18 @@ Consider sorting n numbers stored in array A by first finding the smallest eleme
 find the second smallest element of A, and exchange it with A[2]. Continue in this manner for the first n - 1 elements of A. 
 Write pseudocode for this algorithm, which is known as selection sort.
 
-TODO
+```scala
+function selection-sort(A)
+  for i = 1 to A.length - 1
+    min = i
+    for j = i+1 to A.length
+      if (A[j] < A[min])
+        min = j
+    t = A[min]
+    A[min] = A[i]
+    A[i] = t
+  return A
+```
 
 What loop invariant does this algorithm maintain?
 
