@@ -111,9 +111,9 @@ loop iteration the head of the array contains the smallest element and length of
 algorithm finds the smallest element from the unsorted part of the array and exchanges it with the head of the unsorted part of array. 
 After each iteration, the sorted region of the array is increased by 1 and the unsorted region of the array is decreased by 1. It is very
 important to mention that each found the smallest element from unsorted part of the array on iteration `i` is always greater or equal to
-the element found on iteration `i-1`, so that property of sorted array holds for the sorted region. 
+the element found on iteration `i - 1`, so that property of sorted array holds for the sorted region. 
 
-**Termination**: The selection sort terminates after `A.length-1` iterations. As each element of the sorted array is less than or equal 
+**Termination**: The selection sort terminates after `A.length - 1` iterations. As each element of the sorted array is less than or equal 
 to the next element, the property os sorted array holds. Hence, the algorithm is correct.
 
 Why does it need to run for only the first n - 1 elements, rather than for all n elements?
