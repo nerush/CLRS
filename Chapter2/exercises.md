@@ -102,15 +102,29 @@ function selection-sort(A)
 
 What loop invariant does this algorithm maintain?
 
-TODO
+**Initialization**:
+We start by showing that the loop invariant holds after the first loop iteration. As selection sort works by finding the smallest element
+ from the unsorted part of the array and by exchanging it with the very first element of the unsorted part of the array, after the first 
+ loop iteration the head of the array contains the smallest element and length of unsorted region is reduced by 1.
+
+**Maintenance**: Next, we tackle the second property: showing that each iteration maintains the loop invariant. On each iteration, the 
+algorithm finds the smallest element from the unsorted part of the array and exchanges it with the head of the unsorted part of array. 
+After each iteration, the sorted region of the array is increased by 1 and the unsorted region of the array is decreased by 1. It is very
+ important to mention that each found the smallest element from unsorted part of the array on iteration `i` is always greater or equal to
+  the element found on iteration `i-1`, so that property of sorted array holds for the sorted region. 
+**Termination**: The selection sort terminates after `A.length-1` iterations. As each element of the sorted array is less than or equal 
+to the next element, the property os sorted array holds. Hence, the algorithm is correct.
 
 Why does it need to run for only the first n - 1 elements, rather than for all n elements?
 
-TODO
+As selection sort always tries to find the smallest element from the array, after `A.length - 1` iterations all the elements which
+ are smaller than the remaining one have already been found and sorted, so that the remaining one is the greatest. By sorting 
+ `A.length - 1` elements we have the greatest one at the and of the array for free. That is why selection sort needs to run only 
+ `A.length - 1` iterations in the outer loop. 
 
 Give the best-case and worst-case running times of selection sort in O-notation.
 
-TODO
+O(n^2) for the best and worst cases.
 
 
 #### 2.2-3
