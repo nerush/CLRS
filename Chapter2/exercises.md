@@ -130,18 +130,19 @@ O(n^2) for the best and worst cases.
 
 #### 2.2-3
 Consider linear search again (see Exercise 2.1-3) and justify your answers.
-How many elements of the in- put sequence need to be checked on the average, assuming that the element being searched for is equally likely 
+How many elements of the input sequence need to be checked on the average, assuming that the element being searched for is equally likely 
 to be any element in the array?
 
-TODO
+If each element is equally likely to be searched, then linear search has an average case of n/2 comparisons, but the average case can be 
+affected if the search probabilities for each element vary.
 
 How about in the worst case?
 
-TODO
+Linear search runs in a worst linear time and makes at most n comparisons, where n is the length of the list.
 
 What are the average-case and worst-case running times of linear search in O-notation?
 
-TODO
+Taking into account that n/2 elements are checked on average, asymptotic approximation gives us O(n). 
 
 #### 2.2-4
 How can we modify almost any algorithm to have a good best-case running time?
