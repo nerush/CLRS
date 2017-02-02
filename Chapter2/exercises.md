@@ -149,4 +149,4 @@ How can we modify almost any algorithm to have a good best-case running time?
 
 In order to have a good best-case running time for a given algorithm, we need to extend it with a pre-check hook that is responsible for 
 input analysis. If input is correlated with desired output, then algorithm enters termination phase of loop invariant 
-immediately.
+immediately and expected output is returned by the algorithm.
