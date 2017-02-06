@@ -150,3 +150,13 @@ How can we modify almost any algorithm to have a good best-case running time?
 In order to have a good best-case running time for a given algorithm, we need to extend it with a pre-check hook that is responsible for 
 input analysis. If input is correlated with desired output, then algorithm enters termination phase of loop invariant 
 immediately and expected output is returned by the algorithm.
+
+#### 2.3-1
+Using Figure 2.4 as a model, illustrate the operation of merge sort on the array A[3, 41, 52, 26, 38, 57, 9, 49]
+
+```scala        
+                   |-[3, 9, 26, 38, 41, 49, 52, 57]-|
+      |-[3, 26, 41, 52]-|                    |-[9, 38, 49, 57]-|
+ |-[3, 41]-|       |-[26, 52]-|        |-[38, 57]-|        |-[9, 49]-|
+[3]       [41]   [52]        [26]     [38]       [57]     [9]       [49]
+```
